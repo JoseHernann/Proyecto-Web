@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang= es >
+<head>
+  <meta charset= UTF-8 >
+  <meta http-equiv= X-UA-Compatible  content= IE=edge >
+  <meta name= viewport  content= width=device-width, initial-scale=1.0 >
+  <link rel="stylesheet" href="Estilos/codigo.css">
+  
+  <title>Tarea 16</title>
+</head>
+<body class="fondo" >
+    <div class="titu">
+        <h1>Tarea 16</h1>
+    </div>
+    <p>Programa que convierte de grados <b class="numi">Celsius  a grados Farenheit</b> y vicesversa de <b class="numi"> grados Farenheit a grados Celsius</b></p>
+  <!-- HTML generated using hilite.me --><div class="back"><table><tr><td><pre class="numeros"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45</pre></td><td><pre class="elpre"><span class = "coment">/*</span>
+<span class = "coment">Nombre: Jose Hernan Paredes Sandoval Matricula:1968666 Hora clase: N1</span>
+<span class = "coment">Programa que convierte de grados C -&gt; F o F-&gt; C usando showOptionDialog()</span>
+<span class = "coment">*/</span>
+
+<span class = "bold">import</span> <span class = "bold">javax.swing.JOptionPane</span>;
+<span class = "bold">public</span> <span class = "bold">class</span> <span class = "bold">tarea16</span> {
+    <span class = "bold">public</span> <span class = "bold">static</span> <span class = "bold">void</span> main(String[] args) {
+
+    String [] options = {<span class = "italic">&quot;Salir&quot;</span> , <span class = "italic">&quot;°C -&gt; °F&quot;</span> , <span class = "italic">&quot;°F -&gt; °C&quot;</span>};
+    <span class = "bold">int</span> o =JOptionPane.showOptionDialog(<span class = "bold">null</span>,
+    <span class = "italic">&quot;Selecciona si desea convertir de Celsius a Farenheit (°C -&gt; °F) o de Farenheit a Celsius (°F -&gt; °C)&quot;</span> ,
+    <span class = "italic">&quot;opcion&quot;</span>,
+    JOptionPane.YES_NO_CANCEL_OPTION,
+    JOptionPane.QUESTION_MESSAGE,
+    <span class = "bold">null</span>,
+    options,
+    options [0]);
+    <span class = "bold">switch</span>(o){
+
+        <span class = "bold">case</span> 1:
+            String centi = <span class = "italic">&quot;&quot;</span>;
+            Float vcenti;
+            centi = JOptionPane.showInputDialog(<span class = "italic">&quot;Ingrese los grados Celsius a convetir&quot;</span>);
+            vcenti = Float.parseFloat(centi);
+            <span class = "bold">float</span> conversion = (vcenti * (<span class = "bold">float</span>) 1.8) + 32;
+            JOptionPane.showMessageDialog(<span class = "bold">null</span>, conversion + <span class = "italic">&quot;  °F&quot;</span>);
+        <span class = "bold">break</span>;
+        <span class = "bold">case</span> 2:
+            String far = <span class = "italic">&quot;&quot;</span>;
+            Float vfar;
+            far = JOptionPane.showInputDialog(<span class = "italic">&quot;Ingrese los grados Farenheit a convetir&quot;</span>);
+            vfar = Float.parseFloat(far);
+            <span class = "bold">float</span> conversionf = (vfar - 32) / (<span class = "bold">float</span>) 1.8;
+            JOptionPane.showMessageDialog(<span class = "bold">null</span>, conversionf + <span class = "italic">&quot;  °C&quot;</span>);    
+        <span class = "bold">break</span>;
+
+        <span class = "bold">default</span>:
+
+        <span class = "bold">break</span>;
+
+    }
+
+    }
+}
+</pre></td></tr></table></div>
+
+    
+   <div class="sig" id="end">
+        <a href="tarea15.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke=" #fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+      </svg></a>
+        <a href="Tareas_Menu.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke=" #fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+        <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+      </svg></a>
+        <a href="tarea17.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+      </svg></a>
+    </div>
+
+</body>
+</html>

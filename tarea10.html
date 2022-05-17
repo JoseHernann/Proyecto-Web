@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/tar.css">
+    <title>Tarea 10</title>
+</head>
+<body class="fondo">
+    <div class="contenido">
+   
+        <div class="tar1">
+            <h1>Tarea 10</h1>
+            <div>
+                <span><h3 class="lmbj-1">Gödel</h3></span>
+               
+            </div>
+           <div>
+            <p>Gödel es un lenguaje de programación declarativo y de propósito general de la familia de los lenguajes de programación lógica. Es un lenguaje fuertemente tipificado, el sistema de tipificación se basa en muchos tipos de lógica con polimorfismo paramétrico. Tiene un sistema de módulos. Gödel soporta una precisión infinita números enteros, racionales de precisión infinita, y también números de punto flotante. El carácter declarativo de Gödel lo hace particularmente adecuado para su uso como lenguaje de enseñanza; reduce la brecha que existe actualmente entre la teoría y la práctica en la programación lógica; hace posibles herramientas avanzadas de ingeniería de software tales como depuradores declarativos y generadores de compilación; reduce el esfuerzo que supone proporcionar una aplicación paralela del lenguaje; y ofrece un margen sustancial para la paralelización en tales implementaciones.</p>
+            <p>Como curiosidad, se puede destacar que este lenguaje no funciona en un entorno Windows</p>
+           </div>
+           <!-- tablas de sintaxis y simbolos -->
+           <p> <b class="lmbj-2_1">Sintaxis</b></p> 
+           <p> Está basado en módulos (que aceptan polimorfismo) y en tipos de datos (soporta
+            enteros y racionales con una precisión infinita, y número en coma flotante) y tiene una
+            amplia librería de módulos predefinidos </p>
+        <p> <b class="lmbj-1_1">Simbolos</b></p>
+       <div class="simbolos">
+            <div>
+                <p><b>Aritmeticos</b></p>
+                <table>
+                    <tr><td>+</td><td class="cent"></td><td>Suma</td></tr>
+                    <tr><td>-</td><td class="cent"></td><td>resta</td></tr>
+                    <tr><td>*</td><td class="cent"></td><td>Multiplicación</td></tr>
+                    <tr><td>/</td><td class="cent"></td><td>División</td></tr>
+                </table>
+            </div>
+            <div>
+                <p><b>Relacionales</b></p>
+        <table>
+            <tr><td>==</td><td class="cent"></td><td>Igual que</td></tr>
+            <tr><td> > </td><td class="cent"></td><td>Mayor que</td></tr>
+            <tr><td> >= </td><td class="cent"></td><td>Mayor igual que</td></tr>
+            <tr><td> <  </td><td class="cent"></td><td>Menor que</td></tr>
+            <tr><td> <=  </td><td class="cent"></td><td>Menor igual que</td></tr>
+            
+            
+        </table>
+            </div>
+       </div>
+
+       <!-- estructura basica  -->
+       
+       <p><b class="lmbj-3_1">Esqueleto de un programa en Gödel</b></p>
+       <p> -------------------------</p>
+       <pre>
+       </pre>
+        
+        
+        <p><b class="lmbj-4_1">Aplicación para ejecutar y editar codigo Gödel</b></p>
+        <p>Lo mas cercano que encontre para compilar codigo en Gödel es un extensión en VsCode que se llama <i>Project Gödel Runner</i></p>
+        <p><b class="lmbj-5_1">Paradigma al que pertenece</b></p>
+        <p><s>Gödel</s> es un lenguaje <b>adherido al paradigma de programación lógica</b></p>
+        <p><b class="lmbj-6_1">Programa en Gödel</b></p>
+        <p>Este programa calcula el maximo comun divisor </p>
+        <pre>
+            
+        MODULE GCD.
+        IMPORT Integers.
+        PREDICATE Gcd : Integer * Integer * Integer.
+            Gcd(i,j,d) <-
+                CommonDivisor(i,j,d) &
+                ~ SOME [e] (CommonDivisor(i,j,e) & e > d).
+        PREDICATE CommonDivisor : Integer * Integer * Integer.
+            CommonDivisor(i,j,d) <-
+                IF (i = 0 \/ j = 0)
+                THEN
+                     d = Max(Abs(i),Abs(j))
+                ELSE
+                    1 =< d =< Min(Abs(i),Abs(j)) &
+                    i Mod d = 0 &
+                    j Mod d = 0. 
+           
+           
+        </pre>
+        <p class="lmbj-2_1">NOTA: HAY MUY POCA INFORMACION RESPECTO  A GÖDEL</p>
+            <div class="sig" id="end">
+                <a href="tarea9.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                  </svg></a>
+                <a href="Tareas_Menu.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+                    <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+                  </svg></a>
+                <a href="tarea11.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                  </svg></a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

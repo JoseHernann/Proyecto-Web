@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang= es >
+<head>
+  <meta charset= UTF-8 >
+  <meta http-equiv= X-UA-Compatible  content= IE = edge >
+  <meta name= viewport  content= width = device-width, initial-scale= 1.0 >
+    <link rel="stylesheet" href="Estilos/codigo.css">
+  
+  <title>Tarea 19</title>
+</head>
+<body class="fondo">
+    <div class="titu">
+        <h1>Tarea 19</h1>
+    </div>
+    <p>Programa que encuentra cuentas veces aparece un numero seleccionado 
+        por el usuario dentro de un vector para despues imprimir las veces que lo encontro
+        asi como el vector</p>
+    <!-- HTML generated using hilite.me --><div class="back"><table><tr><td><pre class="numeros"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44</pre></td><td><pre class="elpre"><span class = "coment">/*</span>
+<span class = "coment">Nombre: Jose Hernan Pardes Sandoval Matricula: 1968666 Hora clase: N1 </span>
+
+<span class = "coment">Programa que encuentra cuentas veces aparece un numero seleccionado </span>
+<span class = "coment">por el usuario dentro de un vector para despues imprimir las veces que lo encontro</span>
+<span class = "coment">asi como el vector</span>
+<span class = "coment">*/</span>
+
+<span class = "bold">import</span> <span class = "bold">java.util.Scanner</span>;
+<span class = "bold">public</span> <span class = "bold">class</span> <span class = "bold">tarea19</span> {
+    <span class = "bold">public</span> <span class = "bold">static</span> <span class = "bold">void</span> main(String[] args) {
+        Scanner lec = <span class = "bold">new</span> Scanner(System.in);
+        <span class = "bold">int</span> i,n,b,conta=0;
+        <span class = "bold">int</span> a[];
+        System.out.print(<span class = "italic">&quot;Ingrese la cantidad de numeros a capturar:&quot;</span>);
+        n = lec.nextInt();
+        a = <span class = "bold">new</span> <span class = "bold">int</span>[n];
+        System.out.print(<span class = "italic">&quot;Ingrese el numero a buscar:&quot;</span>);
+        b = lec.nextInt();
+        <span class = "bold">for</span>( i=0;i&lt;n;i++){
+            System.out.print(<span class = "italic">&quot;A[ &quot;</span> + (i+1) +<span class = "italic">&quot;] = &quot;</span> );
+            a[i] = lec.nextInt();        
+            <span class = "bold">if</span> (a[i] == b){
+                conta += 1;
+            }
+        }
+        
+        System.out.print(<span class = "italic">&quot;\033[H\033[2J&quot;</span>);
+        System.out.flush();
+        <span class = "bold">if</span>(n == 1 &amp;&amp; conta != 0){
+            System.out.println(<span class = "italic">&quot;El numero  &quot;</span>+b+<span class = "italic">&quot;  aparece &quot;</span>+conta+<span class = "italic">&quot; vez en el vector:&quot;</span>);
+        }
+        <span class = "bold">else</span>{
+            System.out.println(<span class = "italic">&quot;El numero  &quot;</span>+b+<span class = "italic">&quot;  aparece &quot;</span>+conta+<span class = "italic">&quot; veces en el vector:&quot;</span>);
+        }
+        System.out.print(<span class = "italic">&quot;A =[ &quot;</span> );
+        <span class = "bold">for</span>( i=0;i&lt;n;i++){
+            
+            System.out.print(a[i] + <span class = "italic">&quot;,  &quot;</span>  );
+        }
+        System.out.print(<span class = "italic">&quot;] &quot;</span> );
+        lec.close();
+    }
+}
+</pre></td></tr></table></div>
+
+
+<div class="sig" id="end">
+    <a href="tarea18.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke=" #fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+      </svg></a>
+    <a href="Tareas_Menu.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke=" #fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+        <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+      </svg></a>
+    <a href="tarea20.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+      </svg></a>
+</div>
+
+</body>
+</html>

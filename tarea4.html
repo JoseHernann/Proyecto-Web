@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/tar.css">
+    <title>Tarea 4</title>
+</head>
+<body class="fondo">
+    <div class="contenido">
+   
+        <div class="tar1">
+            <h1>Tarea 4</h1>
+            <div>
+                 <span><h3 class="lmbj">Compiladores e Interpretes</h3></span>
+            </div>
+            <div>
+                <p> <b class="lmbj-1_1">Compiladores</b></p>
+                <p> <b class="tipos">Un poco de historia...</b></p>
+                <ol class="info">
+                    <li>El primer compilador fue escrito por Grace Hopper en 1952, para el lenguaje de programación A-0.</li>
+                    <li>El equipo FORTRAN dirigido por John W. Backus de IBM esta generalmente acreditado por haber presentado el primer compilador completo.</li>
+                    <li>El compilador COBOL para el UNIVAC II fue probablemente el primero en ser escrito en un lenguaje de alto nivel, llamado FLOW-MATIC, por un equipo dirigido por Grace Hopper.</li>
+                    <li>Los primeros compiladores se realizaron programándolos directamente en lenguaje máquina o en ensamblador. Una vez que se dispone de un compilador, se pueden escribir nuevas versiones del compilador (u otros compiladores distintos) en el lenguaje que compila ese compilador.</li>
+                </ol>
+                <p> <b class="tipos"> Tipos de compiladores:</b></p>
+                <ul class="info">
+                    <li>
+                        <b>Compiladores Curzados</b>
+                        <ul class="subli">
+                            <li>Generan código para un sistema distinto del que están funcionando.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Compiladores optimizadores</b>
+                        <ul class="subli">
+                            <li>Realizan cambios en el código para mejorar su eficiencia, pero manteniendo la funcionalidad del programa original.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Compiladores de una sola pasada</b>
+                        <ul class="subli">
+                            <li>Generan el código máquina a partir de una única lectura del código fuente.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Compiladores de varias pasadas</b>
+                        <ul class="subli">
+                            <li>Necesitan leer el código fuente varias veces antes de poder producir el código máquina.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Compiladores JIT (Just In Time):</b>
+                        <ul class="subli">
+                            <li>Forman parte de un intérprete y compilan partes del código según se necesitan.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Compiladores incrementales</b>
+                        <ul class="subli">
+                            <li>Generan un código objeto, instrucción por instrucción cuando el usuario teclea cada orden individual.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Compilador con montador</b>
+                        <ul class="subli">
+                            <li>Compila distintos módulos de forma independiente y después es capaz de aplazarlos.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Auto compilador</b>
+                        <ul class="subli">
+                            <li>Compilador que está escrito en el mismo lenguaje que va a compilar.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Meta compilador</b>
+                        <ul class="subli">
+                            <li>Es programa que recibe como entrada las especificaciones del lenguaje para el que se desea obtener un compilador y genera como salida el compilador para ese lenguaje.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Descompilador</b>
+                        <ul class="subli">
+                            <li>Es un programa que acepta como entrada código maquina y la traduce a un lenguaje de alto nivel realizando el proceso inverso a la compilación.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <div>
+                <p> <b class="lmbj-2_1">Interpretes</b></p>
+                <p> <b class="tipos">Un poco de historia...</b></p>
+                <p>El <a href="https://www.it-swarm-es.com/es/history/por-que-se-escribio-el-primer-compilador-antes-del-primer-interprete/l967408903/">primer interprete</a> que se creo fue el interprete de LISP en 1558 por el estudiante de John McCarthy Steve Russell solo 6 años despues del primer compilador</p>
+                <p>El caso de LISP es muy especial, porque era un lenguaje extremadamente simple que lo hacía factible la interpretacion (y la computadora se había vuelto un poco más grande en 58 ya que cuando se creo el primer compilador las computadoras eran simples y no tenian mucha memoria , memoria la cual es mas utilizada por un interprete que por un compilador). Más importante aún, el intérprete de LISP fue una prueba de concepto con respecto a la autodefinición de LISP ( meta-circularidad ), independientemente de Cualquier problema de usabilidad.</p>
+                <p> <b class="tipos"> Tipos de Interpretes:</b></p>
+                <ul class="info">
+                    <li>
+                        <b>Interpretes puros</b>
+                        <ul class="subli">
+                            <li>Los intérpretes puros son los que analizan y ejecutan sentencia a sentencia todo el programa fuente. Siguen el modelo de interpretación iterativa y, por tanto, se utilizan principalmente para lenguajes sencillos.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Interpretes avanzados o normales</b>
+                        <ul class="subli">
+                            <li>Incorporan un paso previo de análisis de todo el programa fuente. Generando posteriormente un lenguaje intermedio que es ejecutado por ellos mismos. De esta forma en caso de errores sintácticos no pasan de la fase de análisis</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Interpretes incrementales</b>
+                        <ul class="subli">
+                            <li>Existen ciertos lenguajes que, por sus características, no se pueden compilar directamente. La razón es que pueden manejar objetos o funciones que no son conocidos en tiempo de compilación, ya que se crean dinámicamente en tiempo en ejecución. Entre estos lenguajes, pueden considerarse Smalltalk, Lisp o Prolog. Con el propósito de obtener una mayor eficiencia que en la interpretación simple, se diseñan compiladores incrementales. La idea es compilar aquellas partes estáticas del programa en lenguaje fuente, marcando como dinámicas las que no puedan compilarse. Posteriormente, en tiempo de ejecución, el sistema podrá compilar algunas partes dinámicas o recompilar partes dinámicas que hayan sido modificadas. Estos sistemas no producen un código objeto independiente, sino que acompañan el sistema que permite compilar módulos en tiempo de ejecución (run time system) al código objeto generado</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sig" id="end">
+                <a href="tarea3.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                  </svg></a>
+                <a href="Tareas_Menu.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+                    <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+                  </svg></a>
+                <a href="tarea5.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                  </svg></a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

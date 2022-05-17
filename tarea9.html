@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/tar.css">
+    <title>Tarea 9</title>
+</head>
+<body class="fondo">
+    <div class="contenido">
+   
+        <div class="tar1">
+            <h1>Tarea 9</h1>
+            <div>
+                <span><h3 class="lmbj-1">R</h3></span>
+                <img src="Imagenes/r_statistics.jpg" alt="" class="LOGO">
+            </div>
+           <div>
+            <p>R es un entorno de software libre (licencia GNU GLP) y lenguaje de programación interpretado, es decir, ejecuta las instrucciones directamente, sin una previa compilación del programa a instrucciones en lenguaje máquina. El término entorno, en R, se refiere a un sistema totalmente planificado y coherente, en lugar de una acumulación de herramientas específicas e inflexibles, como suele ser el caso en otros softwares de análisis de datos. Este entorno es comúnmente utilizado para la computación estadística y gráfica, ya que dispone de una amplia variedad de técnicas estadísticas (modelos lineales y no lineales, pruebas estadísticas clásicas, análisis de series de tiempo, clasificación, agrupamiento, etc.) y gráficas. </p>
+           </div>
+           <p> <b class="lmbj-2_1">Sintaxis</b></p>
+           
+
+            <!-- tablas de sintaxis y simbolos -->
+           <table class="tabla1">
+            <tr>
+                <td>TIPO</td>
+                <td class="cent"></td>
+                <td>SYNTAXIS</td>
+                <td class="cent"></td>
+                <td>EJEMPLO</td>
+            </tr>
+            
+            <tr>
+                <td >Comentarios</td>
+                <td class="cent"></td>
+                <td>Para realizar comentarios se utilizan <b class="signos"> #</b></td>
+                <td class="cent"></td>
+                <td><b class="signos">#</b> Esta línea es un comentario </td>
+            </tr>
+
+            <tr>
+                <td class="titu">Variables </td>
+                <td class="cent"></td>
+                <td class="titu">En R se usa &lt- para hacer asignaciones. </td>
+                <td class="cent"></td>
+                <td>Radio <b class="signos">&lt-</b> 3
+                </td>
+            </tr>
+            <tr>
+                <td class="titu">Funciones</td>
+                <td class="cent"></td>
+                <td>En R reconocemos a una función usando la notación: <b class="signos">nombre_de_la_función()</b></td>
+                <td class="cent"></td>
+                <td> -mean() <br> -quantile() </td>
+            </tr>
+            <tr>
+                <td class="titu">Datos</td>
+                <td class="cent"></td>
+                <td><ul>
+                    <li>1-Entero o valor flotante</li>
+                    <li>1.0 , 1e10 - Valor punto flotante</li>
+                    <li>"uno" - cadena de texto(va entre comillas) </li>
+                    <li>uno - factor</li>
+                    <li>Null - vacio</li>
+                </ul></td>
+                <td class="cent"></td>
+                <td><ul>
+                    <li>1</li>
+                    <li>1.0</li>
+                    <li>"uno"</li>
+                    <li>uno</li>
+                    <li>null</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td class="titu">Estructuras de datos</td>
+                <td class="cent"></td>
+                <td> Como los vectores son la estructura de datos más sencilla de R, datos simples como el número 3, son en realidad vectores. En este caso, un vector de tipo numérico y largo igual a 1.
+                    para crear vectores se usa la funcion c() <br> <br> Matrices para crear matrices se usa matrix() y para especificar el numero de columnas y de filas se utiliza nrow y rcol 
+
+                    </td>
+                <td class="cent"></td>
+                <td class="titu"># Vector numérico <br>
+                    c(1, 2, 3, 5, 8, 13) <br>
+                    ## [1]  1  2  3  5  8 13 <hr> <br> <br>
+                    matrix(1:12, nrow = 3, ncol = 4) <br>
+                    ##      [,1] [,2] [,3] [,4] <br>
+                    ## [1,]    1    4    7   10 <br>
+                    ## [2,]    2    5    8   11 <br>
+                    ## [3,]    3    6    9   12 </td>
+                   
+            </tr>
+            
+
+        </table>
+        <p> <b class="lmbj-1_1">Simbolos</b></p>
+       <div class="simbolos">
+            <div>
+                <p><b>Aritmeticos</b></p>
+                <table>
+                    <tr><td>+</td><td class="cent"></td><td>Suma</td></tr>
+                    <tr><td>-</td><td class="cent"></td><td>resta</td></tr>
+                    <tr><td>*</td><td class="cent"></td><td>Multiplicación</td></tr>
+                    <tr><td>/</td><td class="cent"></td><td>División</td></tr>
+                    <tr><td>%%</td><td class="cent"></td><td>Divisón entera</td></tr>
+                    <tr><td>^</td><td class="cent"></td><td>Exponencial</td></tr>
+                    <tr><td>sqrt</td><td class="cent"></td><td>raiz cuadrada del argumento no negativo</td></tr>
+                </table>
+            </div>
+            <div>
+                <p><b>Relacionales</b></p>
+        <table>
+            <tr><td>==</td><td class="cent"></td><td>Igual que</td></tr>
+            <tr><td> > </td><td class="cent"></td><td>Mayor que</td></tr>
+            <tr><td> >= </td><td class="cent"></td><td>Mayor igual que</td></tr>
+            <tr><td> &lt  </td><td class="cent"></td><td>Menor que</td></tr>
+            <tr><td> &lt=  </td><td class="cent"></td><td>Menor igual que</td></tr>
+            <tr><td> != </td><td class="cent"></td><td>distinto de</td></tr>
+            <tr><td>=</td><td class="cent"></td><td>asigna un valor a una variable</td></tr>
+        </table>
+            </div>
+            <div> 
+                <p><b>Funciones booleanas</b></p>
+        <table>
+            <tr><td class="lob">&</td><td class="cent"></td><td>Devuelve #f tan pronto uno de sus argumentos es falso</td></tr>
+            <tr><td>|</td><td class="cent"></td><td>Devuelve #t tan pronto uno de sus argumentos es verdadero</td></tr>
+            <tr><td>!</td><td class="cent"></td><td>Negación de un valo booleano</td></tr>
+            <tr><td>isTrue()</td><td class="cent"></td><td>Afirmacion de un valor booleano</td></tr>
+        </table>
+            </div>
+            <div> 
+                <p><b>Palabras reservadas</b></p>
+        <table>
+            <tr><td >break</td><td class="cent"></td></tr>
+            <tr><td>for</td><td class="cent"></td></tr>
+            <tr><td>if</td><td class="cent"></td></tr>
+            <tr><td>in</td><td class="cent"></td></tr>
+            <tr><td>next</td><td class="cent"></td></tr>
+            <tr><td>repeat</td><td class="cent"></td></tr>
+            <tr><td>return</td><td class="cent"></td></tr>
+            <tr><td>while</td><td class="cent"></td></tr>
+        </table>
+            </div>
+       </div>
+
+       <!-- estructura basica  -->
+       
+       <p><b class="lmbj-3_1">Esqueleto de un programa en R</b></p>
+       
+       <p># CABECERA (Simplemente comentarios aclaratorias de nuestro programa) <br>
+       # LLAMADA A LIBRERIAS (Si las hubiera) <br>
+       # FUNCIONES Y PROCEDIMIENTOS(Si los hubiera) <br>
+       # Cuerpo principal del programa (Aquí se definirán todas las variables globales) <br></p>
+        
+        <p><b class="lmbj-4_1">Aplicación para ejecutar y editar codigo R</b></p>
+        <p> <b>--CRAN---</b></p>
+        <p>CRAN es el The Comprehensive R Archive Network, una red en la que se archivan todas las versiones de R base, así como todos los paquetes para R que han pasado por un proceso de revisión riguroso, realizado por el CRAN Team, que se encarga de asegurar su correcto funcionamiento.
+            <br> CRAN es una red porque existen copias de su contenido en diferentes servidores alrededor del mundo, los cuales se actualizan diariamente. De este modo, no importa de qué servidor de CRAN descargues R o algún paquete, lo que vas a obtener será la versión más reciente de ese recurso, que es igual a la disponible en todos los demás servidores.</p>
+        <p>
+        <p>Para instalar R en Windows, la forma más simple es descargar la versión más reciente de R base desde el siguiente enlace de CRAN: <a href="https://cran.r-project.org/bin/windows/base/">https://cran.r-project.org/bin/windows/base/</a> </p>
+        <p>Aunque se puede ejecutar R usando documentos de texto plano es mejor usar un IDE para R se recomienda usar RStudio <br><br> <a href="https://www.rstudio.com/products/rstudio/">RStudio</a> es un entorno de desarrollo integrado (IDE) para R. Incluye una consola, un editor de resaltado de sintaxis que admite la ejecución directa de código, así como herramientas para el trazado, el historial, la depuración y la gestión del espacio de trabajo.</p>
+        <a href="https://www.rstudio.com/products/rstudio/"><img src="Imagenes/rsudio.svg"class="py1"></a>
+        <p>OTROS</p>
+        <ul class="otros"> 
+            <li class="hesk">VS CODE</li>
+            <li class="hesk">Interpretes Online</li>
+            <li class="hesk">etc.</li>
+        </ul>
+        <p><b class="lmbj-5_1">Paradigma al que pertenece</b></p>
+        <p><s>R</s> es un lenguaje <b>Multiparadigma: funcional, vectorial, imperativo, procedural, orientado a objetos</b></p>
+        <p><b class="lmbj-6_1">Programa en R</b></p>
+        <p>Este programa calcula la superfice de un rectangulo </p>
+        <pre>
+            
+            b=3
+            h=4
+            S=b*h
+            S
+
+            ## [1] 12  (este es el resultado)
+           
+            <p> NOTA: Si desea saber mas sobre R da <a href="https://bookdown.org/jboscomendoza/r-principiantes4/datos-usados-en-el-capitulo.html">Click aqui</a></p>
+        </pre>
+            <div class="sig" id="end">
+                <a href="tarea8.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                  </svg></a>
+                <a href="Tareas_Menu.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+                    <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+                  </svg></a>
+                <a href="tarea10.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                  </svg></a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

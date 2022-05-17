@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/tar.css">
+    <title>Tarea 12</title>
+</head>
+<body class="fondo">
+    <div class="contenido">
+   
+        <div class="tar1">
+            <h1>Tarea 12</h1>
+            <div>
+                <span><h3 class="lmbj">ADA</h3></span>
+                <img src="Imagenes/Ada.jpg " class="LOGO">
+            </div>
+           <div>
+                <p><br><br> Ada es un lenguaje de programación estructurado y fuertemente tipado de forma estática que fue diseñado por Jean Ichbiah de CII Honeywell Bull por encargo del Departamento de Defensa de los Estados Unidos. Es un lenguaje multipropósito, orientado a objetos y concurrente, pudiendo llegar desde la facilidad de Pascal hasta la flexibilidad de C++.
+
+                    <br><br> Fue diseñado con la seguridad en mente y con una filosofía orientada a la reducción de errores comunes y difíciles de descubrir. Para ello se basa en un tipado muy fuerte y en chequeos en tiempo de ejecución (desactivables en beneficio del rendimiento). La sincronización de tareas se realiza mediante la primitiva rendezvous.
+                    
+                    <br><br> Ada se usa principalmente en entornos en los que se necesita una gran seguridad y fiabilidad como la defensa, la aeronáutica (Boeing o Airbus), la gestión del tráfico aéreo (como Indra en España) y la industria aeroespacial entre otros.</p>
+           </div>
+           <p> <b class="lmbj-2_1">Sintaxis</b></p>
+            <!-- tablas de sintaxis y simbolos -->
+           <table class="tabla1">
+            <tr>
+                <td>TIPO</td>
+                <td class="cent"></td>
+                <td>SYNTAXIS</td>
+                <td class="cent"></td>
+                <td>EJEMPLO</td>
+            </tr>
+            
+            <tr><td >Mayusculas / minusculas</td><td class="cent"></td><td>Ada no distingue entre mayusculas o minusculas</td></tr>
+            <tr><td class="titu">Subprogramas</td><td class="cent"></td><td>Para poder utilizar los elementos (subprogramas, tipos y variables) definidos en un paquete es necesario poner al principo la cláusula <b class="signos">with</b> <br><br> Los progrmas en ada son un solo programa grande con varios subprogramas dentro</td><td class="cent"></td><td>with Ada.Text_IO; <br>
+                ... <br>
+                Ada.Text_IO.Put_Line("Hola");</td></tr>
+
+            <tr><td >Cadenas</td><td class="cent"></td><td>las cadenas de texto van escritas entre comillas ""</td><td class="cent"></td> <td>"este es un string"</td></tr>
+            <tr><td >Tipos de datos</td><td class="cent"></td><td>Los tipos de datos que acepta ADA es enteros,flotantes,booleanos,strings. <br> <hr> Si una variable está sin inicializar tendrá un valor cualquiera, que puede ser
+                diferente cada vez que se ejecute el programa. Conviene inicializar todas las variables. El compilador no siempre puede detectar
+                cuándo se usan variables sin inicializar y los problemas que pueden producirse
+                son muy difíciles de detectar</td><td class="cent"></td> <td> <ul> <li>2</li><li>2.0</li><li>"hola"</li></ul></td></tr>
+            
+
+            <tr><td class="titu" >Comentario</td><td class="cent"></td><td class="titu"> Los comentarios en Ada empiezan por dos guiones -- y duran hasta el final de la línea </td><td class="cent"></td><td>--este <br> --es <br> --un Comentario <br> <hr> --este tambien es un comentario </td></tr>
+
+        </table>
+        <p> <b class="lmbj-1_1">Simbolos</b></p>
+       <div class="simbolos">
+            <div>
+                <p><b>Aritmeticos</b></p>
+                <table>
+                    <tr><td>+</td><td class="cent"></td><td>Suma</td></tr>
+                    <tr><td>-</td><td class="cent"></td><td>resta</td></tr>
+                    <tr><td>*</td><td class="cent"></td><td>Multiplicación</td></tr>
+                    <tr><td>/</td><td class="cent"></td><td>División</td></tr>
+                    <tr><td>mod</td><td class="cent"></td><td>modulo</td></tr>
+                    <tr><td>=</td><td class="cent"></td><td>Asignación</td></tr>
+                    <tr><td>**</td><td class="cent"></td><td>Potenciación</td></tr>
+                    <tr><td>rem</td><td class="cent"></td><td>Resto</td></tr>
+                    <tr><td>abs</td><td class="cent"></td><td>Absoluto</td></tr>
+                </table>
+            </div>
+            <div>
+                <p><b>Relacionales</b></p>
+        <table>
+            <tr><td>=</td><td class="cent"></td><td>Igual que</td></tr>
+            <tr><td> > </td><td class="cent"></td><td>Mayor que</td></tr>
+            <tr><td> /= </td><td class="cent"></td><td>Desigualdad</td></tr>
+            <tr><td> <  </td><td class="cent"></td><td>Menor que</td></tr>
+            <tr><td> ' </td><td class="cent"></td><td>Apostrofe</td></tr>
+            <tr><td> < ></td><td class="cent"></td><td></td></tr>
+           
+        </table>
+            </div>
+            <div> 
+                <p><b>Funciones booleanas</b></p>
+        <table>
+            <tr><td class="lob">and</td><td class="cent"></td><td>Devuelve #f tan pronto uno de sus argumentos es falso</td></tr>
+            <tr><td>or</td><td class="cent"></td><td>Devuelve #t tan pronto uno de sus argumentos es verdadero</td></tr>
+            <tr><td>not</td><td class="cent"></td><td>Negación de un valo booleano</td></tr>
+
+        </table>
+            </div>
+            <div> 
+                <p><b> Algunas palabras reservadas</b></p>
+        <table>
+            <tr><td >ACCEPT</td><td class="cent"></td></tr>
+            <tr><td>CASE</td><td class="cent"></td></tr>
+            <tr><td>ABORT</td><td class="cent"></td></tr>
+            <tr><td>BODY</td><td class="cent"></td></tr>
+            <tr><td>CONSTANT</td><td class="cent"></td></tr>
+            <tr><td>DELAY</td><td class="cent"></td></tr>
+            <tr><td>DECLARE</td><td class="cent"></td></tr>
+            <tr><td>ELSE</td><td class="cent"></td></tr>
+            <tr><td>ELIF</td><td class="cent"></td></tr>
+            <tr><td><a href="https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Ada/Palabras_reservadas" ><b class="signos">+</bc></a> </td><td class="cent"></td></tr>
+        </table>
+            </div>
+       </div>
+
+       <!-- estructura basica  -->
+       
+       <p><b class="lmbj-3_1">Esqueleto de un programa en ADA</b></p>
+       
+       <pre>
+        <code>
+           &ltPrograma Principal>
+           &itwiths y uses de packages>
+           procedure &itnombre del Programa Principal> is
+            &itdeclaracion de constantes> 
+            &itdeclaracion de tipos >
+            &itprocedimientos del programa>
+            ----------------------------
+            --- comienzo del programa principal
+            ----------------------------
+            &itdeclaracion de variables>
+            begin
+            &itsentencias ejecutables>
+            end &itnombre del programa principal>
+        </code>
+       </pre>
+        
+        <p><b class="lmbj-4_1">Aplicación para ejecutar y editar codigo ADA</b></p>
+        <p> <b>GNAT</b></p>
+        <p> <a href="https://cutt.ly/ETtdUHF">GNAT </a> es el único compilador de Ada gratuito completamente funcional. De hecho es parte del GNU Compiler Collection y por tanto es software libre.  </p>
+        
+        
+        <a href="https://cutt.ly/ETtdUHF"><img src="Imagenes/GNAT-Ada-Compiler-min.png"class="py1"></a>
+        
+        <p><b class="lmbj-5_1">Paradigma al que pertenece</b></p>
+        <p><s>ADA</s> pertenece al  <b>Paradigma orientado a objetos , imperativo</b></p>
+        <p><b class="lmbj-6_1">Programa en ADA</b></p>
+        <p>
+            Programa que muestra las tablas de multiplicar
+        </p>
+        <pre>
+            with Ada.Text_IO;
+            -- Programa que muestras las tablas de multiplicar
+            procedure Tablas_De_Multiplicar is
+                Resultado: Integer;
+
+            begin
+
+            Ada.Text_IO.Put_Line("Tablas de Multiplicar");
+            Ada.Text_IO.Put_Line("=====================");
+            Ada.Text_IO.New_Line(2);
+
+            for Fila in 1..10 loop
+                for Columna in 1..10 loop
+                    Resultado := Fila * Columna;
+                    Ada.Text_IO.Put (Integer'Image(Fila) & "*" &
+                                    Integer'Image(Columna) & "=" &
+                                    Integer'Image(Resultado));
+
+                        Ada.Text_IO.New_Line;
+                    end loop;
+                end loop;
+            end Tablas_De_Multiplicar;
+        </pre>
+            <div class="sig" id="end">
+                <a href="tarea11.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                  </svg></a>
+                <a href="Tareas_Menu.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+                    <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+                  </svg></a>
+                <a href="tarea13.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                  </svg></a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

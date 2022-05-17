@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/tar.css">
+    <title>Tarea 13</title>
+</head>
+<body class="fondo">
+    <div class="contenido">
+   
+        <div class="tar1">
+            <h1>Tarea 13</h1>
+            <div>
+                <span><h3 class="lmbj-1">PHP</h3></span>
+                <img src="Imagenes/new-php-logo.png" alt="" class="centra" >
+            </div>
+           <div>
+            <p>PHP (acrónimo recursivo de PHP: Hypertext Preprocessor)  es un lenguaje de programación destinado a desarrollar aplicaciones para la web y crear páginas web, favoreciendo la conexión entre los servidores y la interfaz de usuario. <br>
+                Entre los factores que hicieron que PHP se volviera tan popular, se destaca el hecho de que es de código abierto.                
+                <br> Esto significa que cualquiera puede hacer cambios en su estructura. En la práctica, esto representa dos cosas importantes:
+                <br> 1.- es de código abierto, no hay restricciones de uso vinculadas a los derechos. El usuario puede usar PHP para programar en cualquier proyecto y comercializarlo sin problemas.
+                <br> 2.- está en constante perfeccionamiento, gracias a una comunidad de desarrolladores proactiva y comprometida. </p>
+           </div>
+           <p> <b class="lmbj-2_1">Sintaxis</b></p>
+           <p>PHP,  tiene una sintaxis sencilla</p>
+
+            <!-- tablas de sintaxis y simbolos -->
+           <table class="tabla1">
+            <tr>
+                <td>TIPO</td>
+                <td class="cent"></td>
+                <td>SYNTAXIS</td>
+                <td class="cent"></td>
+                <td>EJEMPLO</td>
+            </tr>
+            
+            <tr>
+                <td >Comentarios</td>
+                <td class="cent"></td>
+                <td>Para realizar comentarios dentro del código, se utiliza  <b class="signos">//</b>si es de una sola linea pero si es de mas de una linea se utiliza <b class="signos">/* ... */</b> </td>
+                <td class="cent"></td>
+                <td><b class="signos">//</b> Esta línea es un comentario <br> <b class="signos">/*</b> Esta línea <br> es un comentario <b class="signos">*/</b></td>
+            </tr>
+
+            <tr>
+                <td class="titu">Abrir y cerrar codigo PHP </td>
+                <td class="cent"></td>
+                <td class="titu"> &lt?php  ?&gt </td>
+                <td class="cent"></td>
+                <td> &lt? echo "hola" ?&gt 
+                </td>
+            </tr>
+            <tr>
+                <td class="titu">Fin de cada etiqueta</td>
+                <td class="cent"></td>
+                <td> PHP requiere que cada instrucciones se termine con punto y coma al final de cada sentencia pero la etiqueta de cierre de PHP <b class="signos">?&gt</b> ya lo incluye asi que no es  necesario agregarlo </td>
+                <td class="cent"></td>
+                <td>&lt? echo "hola" <b class="signos"> ?&gt</b>  </td>
+            </tr>
+            <tr>
+                <td >Declaracion de salida </td>
+                <td class="cent"></td>
+                <td>Para mostarar en pantalla algo se utiliza <b class="signos">echo</b></td>
+                <td class="cent"></td>
+                <td>	&lt?<b class="signos">  echo</b> '1111' ?&gt
+                </td>
+            </tr>
+        
+
+        </table>
+        <p> <b class="lmbj-2_1">Simbolos</b></p>
+       <div class="simbolos">
+            <div>
+                <p><b>Aritmeticos</b></p>
+                <table>
+                    <tr><td>+</td><td class="cent"></td><td>Suma</td></tr>
+                    <tr><td>-</td><td class="cent"></td><td>resta</td></tr>
+                    <tr><td>*</td><td class="cent"></td><td>Multiplicación</td></tr>
+                    <tr><td>/</td><td class="cent"></td><td>División</td></tr>
+                    <tr><td>%</td><td class="cent"></td><td>Modulo</td></tr>
+                    <tr><td>**</td><td class="cent"></td><td>Exponencial</td></tr>
+                    <tr><td>sqrt</td><td class="cent"></td><td>raiz cuadrada</td></tr>
+                    <tr><td>++</td><td class="cent"></td><td>Incremento</td></tr>
+                    <tr><td>--</td><td class="cent"></td><td>Decremento</td></tr>
+                </table>
+            </div>
+            <div>
+                <p><b>Relacionales</b></p>
+        <table>
+            <tr><td>==</td><td class="cent"></td><td>Igual que</td></tr>
+            <tr><td> > </td><td class="cent"></td><td>Mayor que</td></tr>
+            <tr><td> >= </td><td class="cent"></td><td>Mayor igual que</td></tr>
+            <tr><td> &lt  </td><td class="cent"></td><td>Menor que</td></tr>
+            <tr><td> &lt=  </td><td class="cent"></td><td>Menor igual que</td></tr>
+            <tr><td> != , &lt> </td><td class="cent"></td><td>Diferente</td></tr>
+            <tr><td> = = = </td><td class="cent"></td><td>Identico</td></tr>
+            <tr><td> != = </td><td class="cent"></td><td>no Identico</td></tr>
+           
+        </table>
+            </div>
+            <div> 
+                <p><b>Funciones booleanas</b></p>
+        <table>
+            <tr><td class="lob">and,&& </td><td class="cent"></td><td>true si tanto el primero elemento como el segundo elemento  son true</td></tr>
+            <tr><td>or , || </td><td class="cent"></td><td>true si cualquier elemento es true</td></tr>
+            <tr><td>not</td><td class="cent"></td><td>Negación de un valor booleano</td></tr>
+            <tr><td>xor </td><td class="cent"></td><td>true si uno u otro elemento es true</td></tr>
+        </table>
+            </div>
+            <div>
+                <a href="https://www.php.net/manual/es/language.operators.php"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round" id="plus">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                  </svg></a>
+            </div>
+       </div>
+
+       <!-- estructura basica  -->
+       
+       <p><b class="lmbj-3_1">Esqueleto de un programa en php</b></p>
+       <pre>
+        &lt?php
+
+        /* Aquí vendría el código PHP */
+        
+        /* Este código PHP podría ser una consulta a base de datos */
+        
+        /* Y además podríamos mostrar esos datos */
+        
+        ?&gt
+       </pre>
+        
+        
+        <p><b class="lmbj-4_1">Aplicación para ejecutar y editar codigo PHP</b></p>
+        <p>Antes de comenzar a programar en PHP </p>
+        <p>Se necesita descargar los archivos necesarios desde la pagina <a href="https://windows.php.net/download/">Pagina oficial </a> de PHP  </p>
+        <p> <b>Netbeans</b></p>
+        <p>
+            Miles de programadores coinciden en destacar a <a href="https://netbeans.org/downloads/">NetBeans</a> como el mejor IDE para PHP. Tiene un gran número de funciones, es gratuito y tiene soporte para idiomas como el inglés, el japonés, el ruso, el portugués brasileño y el chino simplificado. La versión gratuita de NetBeans data del año 2010, después de que Sun Microsystems, la lanzara en código abierto. Cuenta con una de las mayores comunidades de desarrolladores que trabajan en un entorno de desarrollo integrado de código abierto. Cabe destacar que se puede utilizar con frameworks como Zend, Doctrine, Smarty y Symfony2. Algunas de las características principales son las plantillas de código, el autocompletado inteligente, sugerencias, arreglos rápidos y refactorización.
+        <p><b>Eclipse</b></p>
+        <p><a href="https://www.eclipse.org/downloads/"> Eclipse PDT</a> (PHP Development Tools) es otra de las opciones open source con mayor recorrido y fiabilidad. Posee una enorme comunidad de desarrolladores que trabajan en todo tipo de plugins necesarios para poner a Eclipse a la altura de otros IDE de primera clase como PHPStorms, NetBeans y Zend studio. La configuración inicial no es sencilla, por lo que habrá que dedicarle tiempo para configurarlo al gusto de cada usuario. Como aspecto negativo, destacar que algunos desarrolladores se quejan de que es lento. Sin embargo, esto ha dejado de ser un problema, ya que los ordenadores con los que se trabaja en estos días son sufiientemente potentes como para no notar diferencia de rendimiento con otros IDE’s. Algunas de las características clave incluyen el resaltado de sintaxis, ayuda de código, formateador de código, refactorización, plantillas de código, navegación de código, depuración de PHP, validación de sintaxis , además de la gran comunidad de usuarios.</p>
+        <p><b>VsCode</b></p>
+        <p>Sin duda uno de los favoritos de muchos es VsCode ya que su versatilidad es algo que les encanta a los programadores, solo basta con descargar la extension de PHP y listo se puede comenzar a escribir codigo PHP</p>
+        <p> <br> Como se puede ver hay multiples formas de escibir codigo PHP solo queda a consideracion del programador con cual se sienta mas comodo</p>
+        
+
+
+        <p><b class="lmbj-5_1">Paradigma al que pertenece</b></p>
+        <p><s>PHP</s> es un lenguaje <b>Multiparadigma: imperativo, funcional, orientado a objetos, procedural, reflexivo</b></p>
+        <p><b class="lmbj-6_1">Programa en PHP</b></p>
+        <p>Formulario sencillo con PHP y HTML</p>
+
+        <pre>
+            FORMULARIO SENCILLO EN HTML QUE LLAMA A accion.php 
+            &lt form action="accion.php" method="post"&gt
+                &ltp&gtSu nombre: &ltinput type="text" name="nombre" /&gt&lt/p&gt
+                &ltp&gtSu edad: &ltinput type="text" name="edad" /&gt &lt/p&gt
+                &ltp&gt&lt input type="submit" /&gt &lt/p &gt
+                &lt/form&gt
+
+                CODIGO PHP PARA MOSTRAR LA INFORMACION DEL FORMUALRIO 
+
+                <span>Hola &lt?php echo htmlspecialchars($_POST['nombre']); ?&gt.
+                    Usted tiene &lt?php echo (int)$_POST['edad']; ?&gt años.</span>
+                
+                EJEMPLO DE UN POSIBLE RESULTADO DE ESTE SCRIPT 
+
+                Hola José. Usted tiene 22 años.
+        </pre>
+            <div class="sig" id="end">
+                <a href="tarea12.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                  </svg></a>
+                <a href="Tareas_Menu.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+                    <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+                  </svg></a>
+                <a href="tarea14.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                  </svg></a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+<html>
+    <Title> Altas de Personas </Title>
+<Body>
+    <form method="post" action="agregar.php">
+        <fieldset>
+        <legend> Ingrese su consulta</legend>
+        <p>
+        <label> Escriba su nombre:
+        <input type="text" name="nombre" />
+        </label>
+        </p>
+        <p>
+        <label>Escriba su correo electrónico:
+        <input type="text" name="email" />
+        </label>
+        </p>
+        <p>
+        <label>Escriba su mensaje:
+        <textarea name="mensaje" cols="30" rows="5"></textarea>
+        </label>
+        </p>
+        <p>
+        <input type="submit" value="enviar"/>
+        </p>
+        </fieldset>
+        </form>
+</Body>
+</Html>

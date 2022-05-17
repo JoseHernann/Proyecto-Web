@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/tar.css">
+    <title>Tarea 5</title>
+</head>
+<body class="fondo">
+    <div class="contenido">
+   
+        <div class="tar1">
+            <h1>Tarea 5</h1>
+            <div>
+                <span><h3 class="lmbj">Prolog </h3></span>
+                <img src="Imagenes/prologlog.png" alt="" class="LOGO">
+            </div>
+           <div>
+                <p>Prolog representa el lenguaje principal en la categoría de Programación
+                    Lógica. A diferencia de otros lenguajes, Prolog no es un lenguaje de
+                    programación para usos generales, sino que esta orientado a resolver
+                    problemas usando el cálculo de predicados.</p>
+           </div>
+           <p> <b class="lmbj-1_1">Sintaxis</b></p>
+           <p>El sistema Prolog reconoce el tipo de un objeto en el programa por medio de su
+            forma sintáctica. Esto es posible porque la sintaxis de Prolog especifica
+            diferentes formas para cada tipo de datos. La forma de distinguir entre átomos
+            y variables es que las variables empiezan con letras mayúsculas, mientras que
+            los átomos con minúsculas. No existe información adicional para comunicarle a
+            Prolog el orden para reconocer el tipo de un objeto.</p>
+           <table class="tabla1">
+            <tr>
+                <td>TIPO</td>
+                <td class="cent"></td>
+                <td>SYNTAXIS</td>
+                <td class="cent"></td>
+                <td>EJEMPLO</td>
+            </tr>
+            
+            <tr>
+                <td >Cadenas de letras, dígitos y el caracter '_',</td>
+                <td class="cent"></td>
+                <td>Empezando con minúsculas</td>
+                <td class="cent"></td>
+                <td>-pedrox25 <br> -x_25 <br> -procedmiento_uno <br> -categoria_x </td>
+            </tr>
+
+            <tr>
+                <td>Los números usados en Prolog incluyen números enteros y números reales</td>
+                <td class="cent"></td>
+                <td>La sintaxis de los enteros es simple</td>
+                <td class="cent"></td>
+
+                <td>1 <br> 1313 <br> 0 <br> -97</td>
+            </tr>
+            <tr>
+                <td>Cadenas de caracteres encerradas en apóstrofes. </td>
+                <td class="cent"></td>
+                <td> Se utiliza cuando sequiere, por ejemplo, tener un átomo que empiece con una letra mayúscula</td>
+                <td class="cent"></td>
+                <td>'Tom' <br> 'Polo_Norte'</td>
+            </tr>
+            <tr>
+                <td>Comentarios </td>
+                <td class="cent"></td>
+                <td> los comentarios de mas una linea van entre /*... */ y los comentarios de una linea inician con un %... </td>
+                <td class="cent"></td>
+                <td>/* <b>Este</b> <br><b> es un comentario</b> */ <br><br> % <b>Este también</b></td>
+            </tr>
+        </table>
+        <p> <b class="lmbj-2_1">Simbolos</b></p>
+       <div class="simbolos">
+            <div>
+                <p><b>Aritmeticos</b></p>
+                <table>
+                    <tr><td>+</td><td class="cent"></td><td>Suma</td></tr>
+                    <tr><td>-</td><td class="cent"></td><td>resta</td></tr>
+                    <tr><td>*</td><td class="cent"></td><td>Multiplicación</td></tr>
+                    <tr><td>/</td><td class="cent"></td><td>División</td></tr>
+                    <tr><td>//</td><td class="cent"></td><td>División entera</td></tr>
+                    <tr><td>MOD</td><td class="cent"></td><td>Modulo</td></tr>
+                    <tr><td>sqrt()</td><td class="cent"></td><td>raiz cuadrada</td></tr>
+                    <tr><td>log()</td><td class="cent"></td><td>logaritmo</td></tr>
+                    <tr><td>ln()</td><td class="cent"></td><td>logaritmo natural</td></tr>
+                    <tr><td>abs()</td><td class="cent"></td><td>valor absoluto</td></tr>
+                    <tr><td>sin(T)</td><td class="cent"></td><td>seno de T </td></tr>
+                    <tr><td>cos(A)</td><td class="cent"></td><td>coseno de A</td></tr>
+                    <tr><td>Tan(C)</td><td class="cent"></td><td>tangente de C</td></tr>
+                </table>
+            </div>
+            <div>
+                <p><b>Relacionales</b></p>
+        <table>
+            <tr><td>=</td><td class="cent"></td><td>Igual que</td></tr>
+            <tr><td> > </td><td class="cent"></td><td>Mayor que</td></tr>
+            <tr><td> >= </td><td class="cent"></td><td>Mayor igual que</td></tr>
+            <tr><td> <  </td><td class="cent"></td><td>Menor que</td></tr>
+            <tr><td> <=  </td><td class="cent"></td><td>Menor igual que</td></tr>
+            <tr><td> <>  </td><td class="cent"></td><td>Desigual que</td></tr>
+            <tr><td> =/=  </td><td class="cent"></td><td>Diferente que</td></tr>
+            <tr><td> is  </td><td class="cent"></td><td>Evaluador de expresión</td></tr>
+            <tr><td> seed  </td><td class="cent"></td><td>Generador de numeros aleatorios</td></tr>
+        </table>
+            </div>
+       </div>
+       <p><b class="lmbj-3_1">Estructura basica</b></p>
+       <p>
+        Un programa en prolog está compuesto por cláusulas. Las cláusulas son la base del programa,
+        están conformadas por hechos y reglas . El conjunto de hechos y reglas forman el
+        conocimiento base del programa, mediante el cual podremos realizar consultas e inferir datos. </p>
+        <code>
+            Predicado(sujeto(‘,’||sujeto)*) <br>
+            Ejemplos: <br>
+                le_gusta_a(juan,maria).
+        </code>
+        <p><b class="lmbj-4_1">Aplicación para ejecutar y editar codigo Prolog</b></p>
+        <p>SWI-Prolog</p>
+        <p>
+            El shell es una aplicación más que podemos ejecutar en nuestro sistema operativo. En nuestro caso, la aplicación se denomina <a href="https://www.swi-prolog.org/download/stable"><b>SWI-PROLOG</b></a>. Al ejecutarla aparece un típico mensaje de bienvenida:
+        </p>
+        <code>
+            machine%  pl <br>Welcome to SWI-Prolog (Version 5.6.0)<br> Copyright (c) 1990-2005 <br>University of Amsterdam. <br>SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,<br> and you are welcome to redistribute it under certain conditions. <br>Please visit http://www.swi-prolog.org for details. For help, <br>use ?- help(Topic). or ?- apropos(Word).<br> ?- 
+        </code>
+        <p>El símbolo ?- nos indica la zona donde podemos escribir los objetivos a ejecutar. </p>
+        <div class="dprolog">
+            <img src="Imagenes/PROLOG1.JPG" alt="Prolog" class="PROLOG1">
+            <a class="tex" href="https://www.swi-prolog.org/download/stable"><p><- Pagina de descarga de SWI-Prolog</p></a>
+        </div>
+        <p><b class="lmbj-5_1">Paradigma al que pertenece</b></p>
+        <p><s>Prolog</s> se enmarca en el paradigma de los <b>lenguajes lógicos y declarativos</b></p>
+        <p><b class="lmbj-6_1">Programa basico en Prolog</b></p>
+        <p>Comprobación del resultado de una operación</p>
+        <pre>
+    1 ?-  X is 2 + 2.
+            X = 4   
+            <B>yes  </B>
+            <br>
+     2 ?-  5 is 2 + 2.
+            no 
+            3 ?-  
+        </pre>
+            <div class="sig" id="end">
+                <a href="tarea4.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                  </svg></a>
+                <a href="Tareas_Menu.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+                    <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+                  </svg></a>
+                <a href="tarea6.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                  </svg></a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

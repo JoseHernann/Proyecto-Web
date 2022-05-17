@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/tar.css">
+    <title>Tarea 8</title>
+</head>
+<body class="fondo">
+    <div class="contenido">
+   
+        <div class="tar1">
+            <h1>Tarea 8</h1>
+            <div>
+                <span><h3 class="lmbj-2">Haskell</h3></span>
+                <img src="Imagenes/ghc.png" alt="" class="LOGO">
+            </div>
+           <div>
+                <p>Haskell es un lenguaje funcional puro, no estricto y fuertemente tipificado.</p>
+                <ul>
+                    <li class="otros">Puro = transparencia referencial:</li>
+                    <li class="otros">No estricto = usa un orden no aplicativo</li>
+                    <li class="otros">Tipificación fuerte = los elementos del lenguaje utilizables están clasificados en distintas categorías o tipos.</li>
+
+                </ul>
+            <P> programa consiste en definiciones de funciones.</P>
+            <ul>
+                <li class="otros">Declararla: indicar el tipo </li>
+                <li class="otros">Definirla : dar el metodo de computo</li>
+            </ul>
+            <p>Los principales tipos de datos b´asicos predefinidos en Haskell son: <i>Char, Int, Integer ,Float, Double y Bool.</i>  </p>
+           </div>
+           <p> <b class="lmbj-2_1">Sintaxis</b></p>
+           <p></p>
+
+            <!-- tablas de sintaxis y simbolos -->
+           <table class="tabla1">
+            <tr>
+                <td>TIPO</td>
+                <td class="cent"></td>
+                <td>SYNTAXIS</td>
+                <td class="cent"></td>
+                <td>EJEMPLO</td>
+            </tr>
+            
+            <tr>
+                <td >Comentarios</td>
+                <td class="cent"></td>
+                <td>Para realizar comentarios de una linea se utilizan dos guiones consecutivos<b class="signos">"--"</b>, así se marca que toda la línea será de comentario y para comentarios de mas de una linea se utiliza <b class="signos">{- ... -} </b></td>
+                <td class="cent"></td>
+                <td><b class="signos">--</b> Esta línea es un comentario <br> <b class="signos">{-</b> Esto tambien <br> es un comentario <b class="signos">-}</b></td>
+            </tr>
+
+            <tr>
+                <td class="titu">Operaciónes </td>
+                <td class="cent"></td>
+                <td class="titu">Es posible escribir varias expresiones matemáticas directamente en ghci y obtener un resultado. Prelude </td>
+                <td class="cent"></td>
+                <td> <b class="signos">Prelude></b> 3 * 5 <br>
+                    15 <br>
+                    <b class="signos">Prelude></b> 4 ^ 2 - 1 <br>
+                    15
+                </td>
+            </tr>
+            <tr>
+                <td class="titu">Cadenas</td>
+                <td class="cent"></td>
+                <td> Las cadenas van entre "comillas dobles." Puede concatenarlas con ++</td>
+                <td class="cent"></td>
+                <td>  Prelude> <b class="signos">"</b> Hello <b class="signos">"</b> <br> Prelude>  "Hello" <b class="signos">++</b> ", Haskell" <br>  "Hello, Haskell"</td>
+            </tr>
+            <tr>
+                <td class="titu">Numeros</td>
+                <td class="cent"></td>
+                <td><ul>
+                    <li>1-Entero o valor flotante</li>
+                    <li>1.0 , 1e10 - Valor punto flotante</li>
+                    <li>0o1, 001 - Valor octal</li>
+                    <li>0x1, 0X1 - Valor hexadecimal</li>
+                    <li>-1 valor negativo (el signo de - no puede ir separado del numero)</li>
+                </ul></td>
+                <td class="cent"></td>
+                <td><ul>
+                    <li>1</li>
+                    <li>1.0</li>
+                    <li>0o1</li>
+                    <li>0x1</li>
+                    <li>-2</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td class="titu">Listas y tuplas</td>
+                <td class="cent"></td>
+                <td> <ul>
+                    <li>[] - Lista vacia </li>
+                    <li>[1,2,3] - Lista de numeros</li>
+                   
+                    <li>"A,B,C" - Listas de tres caracteres </li>
+                    <li>(1,"a") - Tupla de dos elementos</li>
+                </ul></td>
+                <td class="cent"></td>
+                <td class="titu">**[1,2,3] <br> **"A,B,C"</td>
+                   
+            </tr>
+            
+
+        </table>
+        <p> <b class="lmbj-1_1">Simbolos</b></p>
+       <div class="simbolos">
+            <div>
+                <p><b>Aritmeticos</b></p>
+                <table>
+                    <tr><td>+</td><td class="cent"></td><td>Suma</td></tr>
+                    <tr><td>-</td><td class="cent"></td><td>resta</td></tr>
+                    <tr><td>*</td><td class="cent"></td><td>Multiplicación</td></tr>
+                    <tr><td>/</td><td class="cent"></td><td>División</td></tr>
+                    <tr><td>abs</td><td class="cent"></td><td>Valor absoluto del argumento</td></tr>
+                    <tr><td>^</td><td class="cent"></td><td>Exponencial</td></tr>
+                    <tr><td>signum</td><td class="cent"></td><td>signo</td></tr>
+                    <tr><td>max</td><td class="cent"></td><td>Maximo de sus argumentos</td></tr>
+                    <tr><td>min</td><td class="cent"></td><td>Minimos de sus argumentos</td></tr>
+                    <tr><td>sqrt</td><td class="cent"></td><td>raiz cuadrada del argumento no negativo</td></tr>
+                    <tr><td>mod</td><td class="cent"></td><td>modulo</td></tr>
+                </table>
+            </div>
+            <div>
+                <p><b>Relacionales</b></p>
+        <table>
+            <tr><td>==</td><td class="cent"></td><td>Igual que</td></tr>
+            <tr><td> > </td><td class="cent"></td><td>Mayor que</td></tr>
+            <tr><td> >= </td><td class="cent"></td><td>Mayor igual que</td></tr>
+            <tr><td> <  </td><td class="cent"></td><td>Menor que</td></tr>
+            <tr><td> <=  </td><td class="cent"></td><td>Menor igual que</td></tr>
+            <tr><td>≠  </td><td class="cent"></td><td>distinto de</td></tr>
+           
+        </table>
+            </div>
+            <div> 
+                <p><b>Manipular listas</b></p>
+        <table>
+            <tr><td class="lob">:</td><td class="cent"></td><td>insercion de listas</td></tr>
+            <tr><td>++</td><td class="cent"></td><td>concatenacion de listas</td></tr>
+        </table>
+            </div>
+            <div> 
+                <p><b>Funciones booleanas</b></p>
+        <table>
+            <tr><td class="lob">&&</td><td class="cent"></td><td>Devuelve #f tan pronto uno de sus argumentos es falso</td></tr>
+            <tr><td>||</td><td class="cent"></td><td>Devuelve #t tan pronto uno de sus argumentos es verdadero</td></tr>
+            <tr><td>not</td><td class="cent"></td><td>Negación de un valo booleano</td></tr>
+
+        </table>
+            </div>
+            <div> 
+                <p><b>Palabras reservadas</b></p>
+        <table>
+            <tr><td class="lob">case</td><td class="cent"></td></tr>
+            <tr><td>where</td><td class="cent"></td></tr>
+            <tr><td>of</td><td class="cent"></td></tr>
+            <tr><td>then</td><td class="cent"></td></tr>
+            <tr><td>else</td><td class="cent"></td></tr>
+        </table>
+            </div>
+       </div>
+
+       <!-- estructura basica  -->
+       
+       <p><b class="lmbj-3_1">Esqueleto de un programa en Haskell</b></p>
+       <pre>
+        module Main where 
+        addition a b = a + b 
+        main :: IO ()
+         main = do let z = addition 5 3
+             putStrLn $ "The result is: " ++ show z
+
+       </pre>
+        
+        
+        <p><b class="lmbj-4_1">Aplicación para ejecutar y editar codigo Haskell</b></p>
+        <p> <b>--GHCi---</b></p>
+        <p>. Si quieres aprender Haskell o programar de forma cómoda, la solución más habitual es GHCi, un
+            entorno de desarrollo interactivo y listo para usar se puede obtener desde  <a href="https://www.haskell.org/platform/">Haskell Plataform </a> </p>
+        <p>
+        <p>Una vez completada la instalación, deberías poder iniciar el entorno de desarrollo interactivo cuando lo
+                desees con el comando “ghci” desde la línea de comandos de tu sistema: </p>
+        <a href="https://www.haskell.org/platform/"><img src="Imagenes/ghc.png"class="py1"></a>
+        <p>OTROS</p>
+        <ul class="otros"> 
+            <li class="hesk">VS CODE</li>
+            <li class="hesk">Interpretes Online</li>
+            <li class="hesk">etc.</li>
+        </ul>
+        <p><b class="lmbj-5_1">Paradigma al que pertenece</b></p>
+        <p><s>Haskell</s> es un lenguaje <b>Funcional, no estricto, modular, fuertemente tipificado</b></p>
+        <p><b class="lmbj-6_1">Programa en Haskell</b></p>
+        <p>Este programa recibe un numero entero y devuelve el factorial del mismo </p>
+        <pre>
+            
+            fact::Int->Int
+            fact 0=1
+            fact n=n*fact(n-1)
+    
+        </pre>
+            <div class="sig" id="end">
+                <a href="tarea7.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                  </svg></a>
+                <a href="Tareas_Menu.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+                    <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+                  </svg></a>
+                <a href="tarea9.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                  </svg></a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

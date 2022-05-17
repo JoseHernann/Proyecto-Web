@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/tar.css">
+    <title>Tarea 6</title>
+</head>
+<body class="fondo">
+    <div class="contenido">
+   
+        <div class="tar1">
+            <h1>Tarea 6</h1>
+            <div>
+                <span><h3 class="lmbj-1">Python</h3></span>
+                <img src="Imagenes/pngwing.com.png" alt="" class="LOGO">
+            </div>
+           <div>
+                <p>Python es un lenguaje de programación de alto nivel que se utiliza para desarrollar aplicaciones de todo tipo. A diferencia de otros lenguajes como Java o .NET, se trata de un lenguaje interpretado, es decir, que no es necesario compilarlo para ejecutar las aplicaciones escritas en Python, sino que se ejecutan directamente por el ordenador utilizando un programa denominado interpretador, por lo que no es necesario “traducirlo” a lenguaje máquina. </p>
+           </div>
+           <p> <b class="lmbj-2_1">Sintaxis</b></p>
+           <p>La sintaxis es a la programación lo que la gramática es a los idiomas. De la misma forma que la frase “Yo estamos aquí” no es correcta, el siguiente código en Python no sería correcto, ya que no respeta las normas del lenguaje. <br><br>
+
+            if ($variable){ <br>
+                x=9; <br>
+            } <br><br>
+             Python no soporta el uso de $ ni hace falta terminar las líneas con ; como en otros lenguajes, y tampoco hay que usar {} en estructuras de control como en el if. Aqui se muestra la sintaxis basica de Python</p>
+
+            <!-- tablas de sintaxis y simbolos -->
+           <table class="tabla1">
+            <tr>
+                <td>TIPO</td>
+                <td class="cent"></td>
+                <td>SYNTAXIS</td>
+                <td class="cent"></td>
+                <td>EJEMPLO</td>
+            </tr>
+            
+            <tr>
+                <td >Comentarios</td>
+                <td class="cent"></td>
+                <td>detras de un #</td>
+                <td class="cent"></td>
+                <td>#hola este es un comentario</td>
+            </tr>
+
+            <tr>
+                <td class="titu">Espacios</td>
+                <td class="cent"></td>
+                <td class="titu">Los espacios en python significan algo mientras que en c o en Java se usan corchetes para marcar los procesos ejemplo dentro de un for,  en python se usan espacios</td>
+                <td class="cent"></td>
+                <td> 
+                   <pre class="none">
+                    for v in self.V:
+                        for w in self.V:
+                            if v != w and (v, w) not in self.E:
+                                comp.conecta(v, w, 1)
+                   </pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="titu">Definición de funciones: </td>
+                <td class="cent"></td>
+                <td> 
+                   <div class="codi">
+                    <code >
+                        >>>def_nombrefunción(arg1,arg2..):  <br> 
+                    ...instrucción1 <br>
+                    ...instrucción2... <br>
+                    ................... <br>
+                    ...instrucciónN
+                    </code>
+                   </div>
+                </td>
+                <td class="cent"></td>
+                <td>>>> def hola(a,b,c): <br>
+                       return a+b+c 
+                       
+                </td>
+            </tr>
+            <tr>
+                <td class="titu">Variables </td>
+                <td class="cent"></td>
+                <td> En python no es necesario declarar el tipo de variable al incio solo se va asignando valores y python clasifica que tipo es</td>
+                <td class="cent"></td>
+                <td class="titu"> a = 1 <br> x = 2.5 <br> c = 'hola' </td>
+            </tr>
+            <tr>
+                <td class="titu">Final de cada instruccion</td>
+                <td class="cent"></td>
+                <td>En python al final de cada instruccion NO es necesio inculir un punto y coma ya que al cambiar de linea python automaticamente lo detecta como el fin de la instruccion</td>
+                <td class="cent"></td>
+                <td class="titu"> >>>a = 5 <br> >>>b = 2 <br> >>>a * b <br> >>>10</td>
+            </tr>
+        </table>
+        <p> <b class="lmbj-2_1">Simbolos</b></p>
+       <div class="simbolos">
+            <div>
+                <p><b>Aritmeticos</b></p>
+                <table>
+                    <tr><td>+</td><td class="cent"></td><td>Suma</td></tr>
+                    <tr><td>-</td><td class="cent"></td><td>resta</td></tr>
+                    <tr><td>*</td><td class="cent"></td><td>Multiplicación</td></tr>
+                    <tr><td>/</td><td class="cent"></td><td>División</td></tr>
+                    <tr><td>//</td><td class="cent"></td><td>División entera</td></tr>
+                    <tr><td>%</td><td class="cent"></td><td>Modulo</td></tr>
+                    <tr><td>sqrt()</td><td class="cent"></td><td>raiz cuadrada</td></tr>
+                    <tr><td>**</td><td class="cent"></td><td>Potencia</td></tr>
+                    
+                </table>
+            </div>
+            <div>
+                <p><b>Relacionales</b></p>
+        <table>
+            <tr><td>==</td><td class="cent"></td><td>Igual que</td></tr>
+            <tr><td> > </td><td class="cent"></td><td>Mayor que</td></tr>
+            <tr><td> >= </td><td class="cent"></td><td>Mayor igual que</td></tr>
+            <tr><td> <  </td><td class="cent"></td><td>Menor que</td></tr>
+            <tr><td> <=  </td><td class="cent"></td><td>Menor igual que</td></tr>
+            <tr><td> != </td><td class="cent"></td><td>Diferente que</td></tr>
+        </table>
+            </div>
+            <div> 
+                <p><b>Lógicos o Booleanos</b></p>
+        <table>
+            <tr><td class="lob">or</td><td class="cent"></td><td>solo evalua el segundo operando si el primero es falso</td></tr>
+            <tr><td>and</td><td class="cent"></td><td>Solo se evalúa el segundo operando si el primero es verdadero</td></tr>
+            <tr><td>not </td><td class="cent"></td><td>Tiene menos prioridad que otros operadores no booleanos</td></tr>
+            
+        </table>
+            </div>
+            <div>
+                <p><b>Palabras reservadas</b></p>
+        <table>
+            <tr><td>else</td><td class="cent"></td></tr>
+            <tr><td>finally</td><td class="cent"></td></tr>
+            <tr><td> global</td><td class="cent"></td></tr>
+            <tr><td>import</td><td class="cent"></td></tr>
+            <tr><td>from</td><td class="cent"></td></tr>
+            <tr><td>lambda</td><td class="cent"></td></tr>
+            <tr><td>while</td><td class="cent"></td></tr>
+            <tr><td>print</td><td class="cent"></td></tr>
+            <tr><td>raise</td><td class="cent"></td></tr>
+            <tr><td>exec</td><td class="cent"></td></tr>
+            <tr><td>yield</td><td class="cent"></td></tr>
+            <tr><td>pass</td><td class="cent"></td></tr>
+            <tr><td>try</td><td class="cent"></td></tr>
+            <tr><td>raise</td><td class="cent"></td></tr>
+            <tr><td>return</td><td class="cent"></td></tr>
+            <tr><td><a href="https://eiposgrados.com/blog-python/palabras-reservadas-python/"><p><b>+</b></p></a></td><td class="cent"></td></tr>
+        </table>
+            </div>
+       </div>
+
+       <!-- estructura basica  -->
+       
+       <p><b class="lmbj-3_1">Estructura basica</b></p>
+      <p> # CABECERA  (Simplemente  comentarios  aclaratorias  de  nuestro programa) <br> # LLAMADA A LIBRERIAS (Si las hubiera) <br> # CONSTANTES (No existen en Python, las simularemos con un identificador que comience por mayúscula) <br> # FUNCIONES Y PROCEDIMIENTOS(Si los hubiera) <br> # Cuerpo  principal  del  programa  (Aquí  se  definirán  todas las variables globales)</p>
+        <p><b class="lmbj-4_1">Aplicación para ejecutar y editar codigo Python</b></p>
+        <p>Consola</p>
+        <p>
+            Al descargar python desde su <a href="https://www.python.org/downloads/">web oficial</a> se puede comenzar a programar directamente desde la consola iniciando el comado <code>py</code> se iniciar y directamente podras comenzar a escribir codigo python en MODO INTERACTIVO  (Cada linea de codigo es interpretada)  </p>
+        <img src="Imagenes/python2.JPG" class="py">
+        <p>IDLE</p>
+        <p>
+            Tambien al descargar python desde su <a href="https://www.python.org/downloads/">web oficial</a> se descarga IDLE que es un entorno en el que se escribe codigo python en MODO SCRIPT (escribir codigo y despues correrlo)
+        </p>
+        <img src="Imagenes/IDLE.JPG" class="py">
+        <p>OTROS</p>
+        <ul class="otros"> 
+            <li>VS CODE</li>
+            <li>Interpretes Online</li>
+            <li>Note pad++</li>
+            <li>etc.</li>
+        </ul>
+        <p><b class="lmbj-5_1">Paradigma al que pertenece</b></p>
+        <p><s>Python</s> es un lenguaje <b>Multiparadigma: orientado a objetos, imperativo, funcional, reflexivo</b></p>
+        <p><b class="lmbj-6_1">Programa basico en Python</b></p>
+        <p>Este programa resuelve problemas por el algoritmo de Ford y Fulkerson </p>
+        <pre>
+    def camino(s, t, c, f): # construcción de un camino aumentante
+    cola = [s]
+    usados = set()
+    camino = dict()
+    while len(cola) > 0:
+        u = cola.pop(0)
+        usados.add(u)
+        for (w, v) in c:
+            if w == u and v not in cola and v not in usados:
+                actual = f.get((u, v), 0)
+                dif = c[(u, v)] - actual
+                if dif > 0:
+                    cola.append(v)
+                    camino[v] = (u, dif)
+    if t in usados:
+        return camino
+    else: # no se alcanzó
+        return None
+ 
+def ford_fulkerson(c, s, t): # algoritmo de Ford y Fulkerson
+    if s == t:
+        return 0
+    maximo = 0
+    f = dict()
+    while True:
+        aum = camino(s, t, c, f)
+        if aum is None:
+            break # ya no hay
+        incr = min(aum.values(), key = (lambda k: k[1]))[1]
+        u = t
+        while u in aum:
+            v = aum[u][0]
+            actual = f.get((v, u), 0) # cero si no hay
+            inverso = f.get((u, v), 0)
+            f[(v, u)] = actual + incr
+            f[(u, v)] = inverso - incr
+            u = v
+        maximo += incr
+    return maximo
+ 
+# datos tomados de:
+# http://www.aduni.org/courses/algorithms/courseware/handouts/Reciation_09.html
+#CAPACIDADES (DESDE-HAST)
+c = {(0, 1): 16, (1 , 4):8 ,(0, 2): 13, (1, 2): 10, (2, 1): 4, (3, 2): 9, \
+(1, 3): 12, (2, 4): 14, (4, 3): 7, (3, 5): 20, (4, 5): 4}
+opciones = [0 , 1, 2, 3, 4, 5, 6, 7 ,8]
+mayor = 0
+for s in opciones: # CAMBIAR (fuente)
+    for t in opciones: # CAMBIAR (sumidero)
+        nuevo = ford_fulkerson(c, s, t)
+        mayor = max(mayor, nuevo)
+print(mayor)
+
+    
+        </pre>
+            <div class="sig" id="end">
+                <a href="tarea5.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                  </svg></a>
+                <a href="Tareas_Menu.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
+                    <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0" />
+                  </svg></a>
+                <a href="tarea7.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                  </svg></a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
