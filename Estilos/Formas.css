@@ -1,0 +1,144 @@
+/* ///FORMAS/// */
+
+.shape1{
+    z-index: 0;
+    position: absolute;
+    bottom: 500px;
+    left:-70px;
+    transform: rotate(180deg);
+    width: 220px;
+    height: 150px;
+    background-color:#d8f588;
+    border-radius:100%;
+    border-top-right-radius: 60%;
+
+}
+.shape2{
+    position: absolute;
+    bottom: 370px;
+    left:950px;
+    transform: rotate(35.7deg);
+    width: 320px;
+    height: 250px;
+    background-color:#c2a7ee;
+    border-radius:100%;
+    border-top-right-radius: 60%;
+    z-index: 0;
+}
+.shape3{
+    
+    position: absolute;
+    bottom: 50px;
+    left:825px;
+    transform: rotate(15.2deg);
+    width: 120px;
+    height: 150px;
+    background-color:#9dbcff;
+    border-radius:100%;
+    border-top-left-radius: 400%;
+    z-index: 0;
+}
+.shape4{
+    position: fixed;
+    bottom: 0px;
+    top: 500px;
+    left: -150px;
+    transform: rotate(140.2deg);
+    width: 360px;
+    height: 250px;
+   background: #fffb87;
+    border-radius:100%;
+    z-index: 0;
+}
+.shape6{
+
+    position: absolute;
+    bottom: 610px;
+    left: 495px;
+    transform: rotate(45.2deg);
+    width: 60px;
+    height: 50px;
+    background: #ff9aa2;
+    border-radius:100%;
+    border-top-left-radius: 400%;
+    z-index: 0;
+}
+
+.shape7{
+
+    position: absolute;
+    bottom: 285px;
+    left: 495px;
+    transform: rotate(180deg);
+    width: 300px;
+    height: 190px;
+    background: #d4f0f0;
+    border-radius:100%;
+    z-index: 0;
+}
+.shape8{
+
+    position: absolute;
+    bottom: 170px;
+    left: 1155px;
+    transform: rotate(-50deg);
+    width: 60px;
+    height: 50px;
+    background: #ffc8a2;
+    border-radius:100%;
+    border-top-left-radius: 200%;
+    z-index: 0;
+}
+.shape9{
+
+    position: absolute;
+    bottom:90px;
+    left: 460px;
+    transform: rotate(-50deg);
+    width: 90px;
+    height: 120px;
+    background: #fcb4ec;
+    border-radius:100%;
+    border-top-left-radius: 200%;
+    z-index: 0;
+}
+.shape10{
+
+    position: absolute;
+    bottom: 810px;
+    left: 495px;
+    transform: rotate(45.2deg);
+    width: 60px;
+    height: 50px;
+    background: #ff9aa2;
+    border-radius:100%;
+    border-top-left-radius: 400%;
+    z-index: 0;
+}
+.shape11{
+    position: absolute;
+    bottom: 750px;
+    left: 820px;
+    transform: rotate(15.2deg);
+    width: 120px;
+    height: 150px;
+    background-color:#9dbcff;
+    border-radius:100%;
+    border-top-left-radius: 400%;
+    z-index: 0;
+}
+.shape12{
+    position: absolute;
+    bottom: 780px;
+    left: 10px;
+    transform: rotate(-50deg);
+    width: 90px;
+    height: 120px;
+    background: #fcb4ec;
+    border-radius:100%;
+    border-top-left-radius: 200%;
+    z-index: 0;
+}
+
+
+

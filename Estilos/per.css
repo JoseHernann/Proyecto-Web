@@ -1,0 +1,796 @@
+/***************************************
+         PAGINA DE PERSONALES -1-
+****************************************/
+
+/***************************************
+ BARRA DE NAVEGACION Y AJUSTES GENERALES
+****************************************/
+nav{
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  background-color: #efefeece;
+  z-index: 10;
+  margin-left: 10%;
+  width: 80%;
+  height: 50px;
+  margin-right: 5%;
+  border-radius: 40px;
+}
+nav a{
+  text-decoration: none;
+  color: #000;
+  font-family: cremonaregular ;
+  Font-size: 20px;
+}
+body{
+ background-color: #efefee; ;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* Parametros para dividir la pagina */
+#inicio ,#nombre ,#nacimiento ,#hermanos , #pasatiempos , #sobremi, #fin{
+  width: 90%;
+  height: 480px;
+  margin-top: 200px;
+  margin-left: 5%;
+  box-sizing:border-box;
+
+}
+/***************************************
+         INICIO DE LA PAGINA 
+****************************************/
+#inicio .hola{
+  position: relative;
+  text-align: center;
+  left: 60%;
+  top: 20%;
+  font-size: 70px;
+  width: fit-content;
+}
+#inicio .yo{
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top:100px;
+  width: 540px;
+  height: 540px;
+  border-radius: 40%;  
+}
+.yo-p{
+  width: 400px;
+  position: absolute;
+  right: 120px;
+  top:410px;
+  z-index: -1;
+}
+/***************************************
+        SECCION DEL NOMBRE 
+****************************************/
+#nombre{
+  background-color: #000;
+  margin-left:5%;
+  margin-right: 0%;
+  width: 90%;
+  height: 520px;
+  color: #ffff;
+  text-align: center;
+  border-radius: 90px;
+}
+#nombre .nom2{
+  position: relative;
+  top: 20%;
+  font-size: 60px;
+}
+.nom{
+  position: relative;
+  top: 20%;
+  font-size: 50px;
+  font-family: monospace;
+  background-color: rgb(253, 161, 161);
+  width: fit-content;
+  left: 17%;
+  color: rgb(0, 0, 0);
+  border-radius: 40px;
+}
+.mano{
+  margin-top: 90px;
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+}
+
+/***************************************
+        SECCION DE NACIMIENTO
+****************************************/
+
+/* DIAPOSITIVA*/
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/***************************************
+        FAMILIA (HERMANOS)
+****************************************/
+#hermanos{
+  text-align: center;
+  display: grid;
+  margin-top: 250px;
+}
+.hermanos{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1px;
+  justify-content: space-around;
+  gap: 3.5cm;
+  width: 700px;
+  justify-self: center;
+  grid-auto-rows: minmax(100px,auto);
+}
+.herma{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+}
+
+#hermanos .tarjeta-1{
+  width: 900px;
+  height: fit-content;
+  justify-self: center;
+  position: relative;
+  top:-20px ;
+  border-radius: 37px;
+  background: #efefee;
+  box-shadow: inset 5px -5px 4px #aeaeae,
+            inset -5px 5px 4px #ffffff;
+  font-size: 25px;
+  z-index: 2;
+}
+#hermanos span{
+  font-size: 40px;
+  background: #aeaeae;
+  align-self: center;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  top: -30px;
+  justify-self: center;
+}
+.fam-p{
+  position: absolute;
+  width: 320px;
+  left: 32%;
+  top: 15%;
+  z-index:-1;
+}
+/***************************************
+            PASATIMPOS 
+****************************************/
+#pasatiempos{
+  text-align: center;
+}
+
+/***************************************
+            SOBRE MI
+****************************************/
+#sobremi{
+  display:grid; 
+  grid-template-columns: 50% 50%;
+ text-align: center;
+}
+#sobremi .sbmi{
+  width: 300px;
+  position: relative;
+  height: 500px;
+  
+  border-radius: 40px;
+  font-size: 25px;
+  padding: 60px;
+  border-radius: 36px;
+  background: #efefee;
+  box-shadow: inset 6px 6px 5px #aeaeae,
+            inset -6px -6px 5px #dfdede;
+  left: 5px;
+  top: -70px;
+}
+.sob{
+  background-color: #000;
+  color: #efefee;
+}
+.platillos img{
+  width: 150x;
+  height: 150px;
+  
+  position: relative;
+  top:40px;
+  border-radius: 30px;
+}
+.platillos img:hover{
+  height: 170px;
+}
+.platillos{
+  width: 600px;
+  height: 500px;
+  position: relative;
+  right: 90px;
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  place-items: center;
+  grid-auto-rows: 210px;
+  top: 0px;
+  gap: 10px;
+  
+}
+.selec{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: -120%;
+  top: -460px;
+  z-index: -1;
+  transform: rotate(70deg);
+}
+.selec1{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: -19%;
+  top: -460px;
+  z-index: -1;
+  transform: rotate(190deg);
+}
+
+/***************************************
+         FIN DE LA PAGINA 
+****************************************/
+#fin{
+  text-align: center;
+  font-size: 30px;
+  font-family:unset;
+  font-weight: bold;
+  position: relative;
+  top: 70px;
+  background-color: #000;
+  color: #efefee;
+  width: 100%;
+  margin-left: 0 ;
+  padding: 90px ;
+}
+#fin a{
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #b2dd89;
+  font-family: monospace;
+}
+
+/***************************************
+    PAGINA DE PERSONALES -2- 
+****************************************/
+.inicio{
+ border: 10px solid #000;
+ height: 80vh;
+ margin-top: 10vh;
+ border-radius: 40px;
+ text-align: center;
+ 
+}
+.inicio h1{
+  position: relative;
+  top:30vh;
+}
+.inicio .flecha{
+  position: relative;
+  top: 41vh;
+  width: 90px;
+  height: 90px;
+  left: .1vw;
+  animation:flecha 1.5s 1s infinite alternate both
+}
+
+ @keyframes flecha{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+ /***************************************
+                SPOTIFY  
+****************************************/
+.sptf{
+  position: relative;
+  margin-top: 190px;
+  height: 200px;
+  text-align: center;
+}
+.sptf h2{
+  position: relative;
+  top:7vh;
+  font-size: 35px;
+
+}
+.bocina{
+  width: 30vh;
+  height: 60vh;
+  border: 6px solid #000;
+  position: relative;
+  left: 7vh;
+  top: 50px;
+  border-radius: 40px;
+ display: grid;
+ grid-template-rows: 10% ;
+ justify-content: center;
+}
+.bocina-1{
+  width: 30vh;
+  height: 60vh;
+  border: 6px solid #000;
+  position: relative;
+  left: 74vw;
+  top: -55vh;
+  border-radius: 40px;
+ display: grid;
+ grid-template-rows: 10% ;
+ justify-content: center;
+}
+
+.b-1 , .b-1::after{
+  position: relative;
+  width: 15vh;
+  height: 15vh;
+  border: 5px solid #000;
+  border-radius: 50%;
+  top: 5vh;
+  display: grid;
+  place-items: center;
+  background-color: #000;
+  animation:b-1 .9s ease-in-out infinite both;
+}
+.b-1::after{
+  content: "";
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  top: 2vh;
+  background-color: #ffff;
+}
+.b-2 , .b-2::after{
+  position: relative;
+  width: 15vh;
+  height: 15vh;
+  border: 5px solid #000;
+  border-radius: 50%;
+  top: 30vh;
+  display: grid;
+  place-items: center;
+  background-color: #000;
+  animation:b-2 .9s ease-in-out infinite both;
+}
+.b-2::after{
+  content: "";
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  top: 2vh;
+  background-color: #fff;
+}
+
+.b-3 , .b-3::after{
+  position: relative;
+  width: 15vh;
+  height: 15vh;
+  border: 5px solid #000;
+  border-radius: 50%;
+  top: 25px;
+  display: grid;
+  place-items: center;
+  background-color: #000;
+  animation:b-3 .9s ease-in-out infinite both;
+}
+.b-3::after{
+  content: "";
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  top: 2vh;
+  background-color: #ffff;
+}
+.b-4 , .b-4::after{
+  position: relative;
+  width: 15vh;
+  height: 15vh;
+  border: 5px solid #000;
+  border-radius: 50%;
+  top: 30vh;
+  display: grid;
+  place-items: center;
+  background-color: #000;
+  animation:b-4 .9s ease-in-out infinite both;
+}
+.b-4::after{
+  content: "";
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  top: 2vh;
+  background-color: #fff;
+}
+@keyframes b-1{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+@keyframes b-2{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+@keyframes b-3{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+@keyframes b-4{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+
+.spoti{
+  position: relative;
+  left: 480px;
+  border: 9px solid #000;
+  width: 320px ;
+  height: 380px;
+  top:-110vh ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.spoti > iframe{
+  border-radius: 20px;
+}
+/***************************************
+            VIDEO :  ANIME
+****************************************/
+.animem{
+  display: grid;
+  justify-content: center;
+  position: relative;
+  top:300px;
+}
+.anime{
+  margin-top: 450px;
+  border: 4px solid #000;
+  height: 80vh;
+  width: 120vh;
+  border-radius: 10px;
+  margin-left: 0%;
+}
+.med{
+  position:absolute;
+  text-align: center;
+  top: 42vh;
+  left: 3vh;
+}
+.marco-1{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin-top: 2%;
+  margin-left: 5%;
+  border: 5px solid #000;
+  border-radius: 30px;
+  display: flex;
+  place-items:center;
+  background-color: #fff;
+}
+.vyt{
+  border-radius: 30px;
+  top:2vh;
+  margin-left: 1%;
+  margin-right: 1%;
+ 
+}
+.pie-1 , .pie-1::after{
+ position: relative;
+ width: 20vh;
+ height: 10vh;
+ border: 4px solid #000;
+ left: 54vh; 
+ top: 3.9vh;
+}
+.pie-1::after{
+  content: "";
+  position: absolute;
+  transform: rotate(180deg);
+  left: -16vh;
+  width:50vh;
+  height:5vh ;
+  border-radius: 40px;
+  top:7vh;
+  background-color: #ffff;
+}
+/***************************************
+            GALERIA DE FOTOS  
+****************************************/
+.foto{
+  margin-top: 550px;
+  margin-left: 7%;
+  height: 80vh;
+}
+.galeriap{
+  position: relative;
+  right:0vh;
+  top: 40%;
+  
+}
+.galeria{
+  width: 20vh;
+  height: 27vh;
+  position: absolute;
+  left: 520px;
+  top: 95px;
+}
+.galeria1{
+  width: 35vh;
+  height: 45vh;
+  
+  border-radius: 10px;
+  position: absolute;
+  left: 870px;
+  top:-20vh;
+}
+.galeria2{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left:110vh;
+  top: 120px;
+  
+}
+.galeria3{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left:200px;
+  top: 10px;
+  
+}
+.galeria4{
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left:320px;
+  top: -180px;
+  
+  border-radius: 50%;
+}
+.galeria5{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left:560px;
+  top: -180px;
+  
+}
+.galeria6{
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left:100px;
+  top: -180px;
+  
+  border-radius: 50%;
+}
+.galeria7{
+
+  width: 23vh;
+  height: 27vh;
+  position: absolute;
+  left: 30px;
+  top: 50px;
+ 
+}
+.galeria8{
+
+  width: 15vh;
+  height: 17vh;
+  position: absolute;
+  right: 250px;
+  top: 165px;
+ 
+}
+.galeria9{
+
+  width: 15vh;
+  height: 17vh;
+  position: absolute;
+  right: 100px;
+  top: 165px;
+ border-radius: 20px;
+}
+.foto h2{
+  text-align: center;
+}
+
+/***************************************
+    PAGINA DE PERSONALES -3- 
+****************************************/
+
+#inicio .yo-3{
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top:100px;
+  width: 800px;
+  height: 500px;
+  left: -10px;
+  border-radius: 40%; 
+  filter: drop-shadow(20px  15px  #000); 
+}
+#inicio h4{
+  position: absolute;
+  top:490px;
+  left: 880px;
+}
+.yo-p1{
+  width: 400px;
+  position: absolute;
+  right: 150px;
+  top:410px;
+  z-index: -1;
+  filter: saturate(20%) contrast(50%);
+}
+
+.nom3{
+  position: relative;
+  top: 20%;
+  font-size: 25px;
+ 
+  margin: 5%;
+}
+#nombre .nom4{
+  position: relative;
+  top: 20%;
+  font-size: 60px;
+  background-color: #c4ffaced;
+  width: 520px;
+  left: 30%;
+  border-radius: 40px;
+}
+#nombre2{
+  background-color: #000;
+  margin-left:5%;
+  margin-right: 0%;
+  width: 90%;
+  height: 720px;
+  color: #ffff;
+  text-align: center;
+  border-radius: 90px;
+  margin-top: 290px;
+}
+
+#nombre2 .nom6{
+  position: relative;
+  top: -10%;
+  font-size: 25px;
+  padding: 20px;
+}
+.nom5 , .nom5-1 , .nom5-2{
+  position: relative;
+  top: 5%;
+  font-size: 60px;
+  background-color: #e0a9ffe1;
+  width: 520px;
+  left: 30%;
+  border-radius: 40px;
+  
+}
+.nom5-1{
+  background-color: #ddd089;
+  font-size: 50px;
+}
+.nom5-2{
+  background-color: #aeecffe5;
+}
+.plinux{
+  display: grid;
+  grid-template-columns: 50%;
+  padding: 50px;
+}
+.linux{
+  font-size: 50px;
+}
+.tux{
+  position: relative;
+  top:-600px;
+  left: 480px;
+  width: 700px;
+  height: 500px;
+}
+#nombre3 , #nombre4{
+  background-color: #000;
+  margin-left:5%;
+  margin-right: 0%;
+  width: 90%;
+  height: 720px;
+  color: #ffff;
+  text-align: center;
+  border-radius: 90px;
+  margin-top: 190px;
+}
+.com{
+  position: absolute;
+  width: 350px;
+  height:350px;
+  left: 750px;
+}
+.plinux h5{
+  position: relative;
+  left: 550px;
+  top: -30px;
+  color: rgb(255, 255, 143);
+ z-index: 10;
+}
+.plinux h4{
+  position: relative;
+  left: 570px;
+  top: -610px;
+  color: rgb(255, 255, 143);
+ z-index: 10;
+}
+.lin{
+  width: 150px;
+  height:150px;
+  border-radius: 40px;
+  top: -40px;
+}
+.plinuxr{
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  justify-content: space-around;
+  margin-left: 2%;
+  margin-top: 10%;
+  gap: 1cm;
+}
+.lin:hover{
+  height: 159px;
+  width: 159px;
+ 
+}
+#nombre4 pre{
+  position: relative;
+  
+  left: 0%;
+  top: 50px;
+  
+}
+/***************************************
+        ATRAS , HOME , SIGUIENTE
+****************************************/
+.sig{
+  position: relative;
+  background-color: #efefee;
+  margin-top: 90px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 1cm;
+}
+/*---------------||||||-------------------*/

@@ -1,0 +1,136 @@
+
+/* CONTENEDOR*/
+.padre{
+    width: 90vh;
+    height: 20vh;
+    margin: 0 auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    
+}
+span{
+    font-family: sans-serif;
+    font-size: 90px;
+    text-align: center;
+}
+.tarea{
+    width: 300px;
+    height: 90px;
+    display: flex;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    top:100px;
+    position: absolute;
+   justify-content: center;
+}
+svg{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+    /*LOGO TAREAS*/
+.t{
+    color: blue;
+}
+.a1{
+    color: red;
+}
+.r{
+    color: rgb(255, 196, 0);
+}
+.e{
+    transform: rotate(-20deg);
+    color: blue;
+}
+.a2{
+    color:green
+}
+.s{
+    color: red;
+}
+/* MENU DESPLEGABLE */
+.barrabtn {
+    width: 450px; 
+    height:50px;
+    background: #ffffff;
+    border-radius: 40px;
+    box-shadow:  -5px 5px 16px #8d8d8d,
+             5px -5px 16px #ffffff; 
+    top: 10vh;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+
+.barra {
+    position: relative;
+    top: 9vh;
+    display: inline-block;
+}
+
+.barra-cont {
+    display: none;
+    position: absolute;
+    top: 55px;
+    /* background-color: #f9f9f9; */
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 20px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.0px );
+    text-align: center;
+    min-width: 450px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.barra-cont a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: sans-serif;  
+}
+
+.barra-cont a:hover {
+    border: 2px solid #7f7f7f; 
+    border-radius: 10px;
+}
+
+.barra:hover .barra-cont {
+    display: block;
+}
+
+div{
+    z-index: 10;
+}
+
+.shape7{
+    left: 150px;
+    width: 200px;
+    height: 150px;
+    opacity: 60%;
+    transform: rotate(152deg);
+    border-top-left-radius: 160%;
+    border-bottom-right-radius: 210%;
+}
+/* REGRESO A INDEX*/
+.home{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    z-index: 9;
+    opacity: 70%;
+    
+}
+.home:hover, .home:focus, .home:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}

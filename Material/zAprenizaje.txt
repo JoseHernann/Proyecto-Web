@@ -1,0 +1,20 @@
+#insertar whatsapp 
+HTML:
+<a id="wpp" href="https://api.whatsapp.com/send?phone=8132389013&text=Hola%20:)!! "> <img class="whp" src="https://img.icons8.com/color/96/000000/whatsapp--v3.png"/> </a>
+CSS:
+.whp {
+    width: 7vh;
+    height: 7vh;
+    z-index: 20;
+    position: absolute;
+    margin: 0 auto;
+    right: 5vh;
+    bottom: 5vh;
+}
+.whp:hover{
+    -webkit-transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  -o-transform:scale(1.2);
+  transition:all .2s ease;
+    
+}

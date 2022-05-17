@@ -1,0 +1,76 @@
+HTML:
+CLASS /ID la diferencia id es para 1 / class se puede usar con varios 
+
+
+CSS: 
+# cuando se usa ID 
+. cuando se usa class
+
+coooc
+
+<div id="tarjeta">
+    <pre id="datos">
+        <b>Alumno:</b>José Hernán Paredes Sandoval
+        <b>Matricula:</b>1968666  
+        <b>Hora:</b>N1  
+        Lenguajes de programación  
+        <b>Semestre Agosto-Diciembre 2021</b>
+        <b>Maestro:</b>Ing. Ismael Gutierrez Pimentel   
+    </pre>
+    <img src="Imagenes/imagen2.jpg" id="yo">
+
+</div>
+
+JS: 
+/*Diseño para celulares*/
+/*@media screen and (min-width:320px) and (max-width:820px) {
+    #datos{
+        font-size: 80%;
+        left: -25px;
+        top: 280px;
+        position: fixed;
+        
+    }
+    #yo{
+        left: 25px;
+        
+        width: 250px;
+        height:250px;
+        
+    }
+    #tarjeta{
+        width: 4in;
+        left: 25px;
+        height: 600px;
+        width: 300px;
+        position: absolute;
+        display: grid;
+    }
+    #boton{
+        
+       position: absolute;
+        left: 25%;
+        top: 500px;
+       width: 160px;
+       height: 40px;
+       z-index: 1;
+       
+    }
+    a:link, a:visited, a:active {
+        font-size: 14px;  
+        font-family: myAtariFont;
+    }
+    #boton2{
+        position:absolute;
+        left: 25%;
+        top: 570px;
+       width: 160px;
+       height: 40px;
+       z-index: 1;
+        
+    }
+    @font-face {
+        font-family: myAtariFont;
+        src: url(fuentes/AtariSmall.ttf);
+    }
+}*/
